@@ -1,0 +1,32 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cloning repository
+        uses: actions/checkout@v3
+
+      - name: Installing Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Executing of script
+        run: node generate-readme.js
+
+      - name: Commit and pus
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "🔄 Automatic update README.md" || exit 0
+          git push

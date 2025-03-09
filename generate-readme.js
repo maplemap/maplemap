@@ -25,6 +25,8 @@ async function fetchRepos() {
 		`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`,
 		{ headers: HEADERS }
 	);
+	console.log(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`)
+	console.log(response)
 
 	if (!response.ok) {
 		console.error('❌ Failed to fetch repositories:', response.statusText);

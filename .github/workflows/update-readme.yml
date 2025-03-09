@@ -1,11 +1,8 @@
 name: Update README
 
 on:
-#  schedule:
-#    - cron: "0 * * * *"
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "0 * * * *"
 
 jobs:
   update-readme:

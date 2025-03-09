@@ -3,6 +3,7 @@ import fetch from 'node-fetch';
 
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
 const GITHUB_TOKEN = process.env.PAT_TOKEN;
+
 const HEADERS = {
 	Authorization: `token ${GITHUB_TOKEN}`,
 	Accept: 'application/vnd.github.v3+json',
@@ -21,14 +22,10 @@ const getDateWeeksAgo = (weeks) => {
 };
 
 async function fetchRepos() {
-	console.log('Using token:', GITHUB_TOKEN ? '✅ Exists' : '❌ Not Found');
-
 	const response = await fetch(
 		`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`,
 		{ headers: HEADERS }
 	);
-	console.log(`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`)
-	console.log(response)
 
 	if (!response.ok) {
 		console.error('❌ Failed to fetch repositories:', response.statusText);
@@ -141,29 +138,25 @@ async function getRepoStats() {
 async function generateReadme() {
 	const { sortedLanguages, recentUpdates } = await getRepoStats();
 
-	let readmeContent = `**GitHub Statistics**\n\n\`\`\`\n`;
+	let readmeContent = `**GitHub language stats**\n\n\`\`\`\n`;
 
-	const langLines = sortedLanguages.map(({ language, percentage }) => {
+	sortedLanguages.forEach(({ language, percentage }) => {
 		const barLength = Math.round((percentage / 100) * 20);
 		const bar = '█'.repeat(barLength).padEnd(20, '░');
-		return `${language.padEnd(12)} ${bar}  ${percentage}%`;
+		readmeContent += `${language.padEnd(12)} ${bar}  ${percentage}%\n`;
 	});
+	readmeContent += `\`\`\`\n\n`;
 
-	const updateLines = recentUpdates.map(({ name, updatedAt, additions, deletions }) => {
-		return `${name.padEnd(20)} Date: ${new Date(updatedAt).toDateString()}, Lines of Code: +${additions} 📉 -${deletions}`;
-	});
-
-	const maxLength = Math.max(langLines.length, updateLines.length);
-	for (let i = 0; i < maxLength; i++) {
-		const lang = langLines[i] || ''.padEnd(40);
-		const update = updateLines[i] || '';
-		readmeContent += `${lang}${''.padEnd(20)}${update}\n`;
+	if (recentUpdates.length > 0) {
+		readmeContent += `**Recent updates in last 6 weeks**\n\n\`\`\`\n`;
+		recentUpdates.forEach(({ name, updatedAt, additions, deletions }) => {
+			readmeContent += `${name.padEnd(20)} ${new Date(updatedAt).toDateString()}, LoC: +${additions} -${deletions}\n`;
+		});
+		readmeContent += `\`\`\`\n`;
 	}
 
-	readmeContent += `\`\`\`\n`;
-
 	fs.writeFileSync('README.md', readmeContent);
-	console.log('✅ README.md updated successfully!');
+	console.log('✅ README.md updated successfully!"');
 }
 
 generateReadme().catch(console.error);

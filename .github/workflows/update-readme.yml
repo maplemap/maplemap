@@ -14,13 +14,15 @@ jobs:
     steps:
       - name: Cloning repository
         uses: actions/checkout@v3
+        with:
+          persist-credentials: false
 
       - name: Installing Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Executing of script
+      - name: Executing script
         run: node generate-readme.js
 
       - name: Set up Git user
@@ -28,10 +30,16 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Push changes
+      - name: Check for changes
         run: |
           git add README.md
-          git commit -m "🔄 Automatic update README.md" || exit 0
-          git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "🔄 Automatic update README.md"
+
+      - name: Push changes using PAT
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/maplemap/maplemap.git
+          git push origin main

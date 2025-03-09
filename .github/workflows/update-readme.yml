@@ -19,8 +19,11 @@ jobs:
         with:
           node-version: 18
 
+      - name: Install dependencies
+        run: npm install
+
       - name: Executing script
-        run: node generate-readme.js
+        run: GITHUB_USERNAME=${{ github.repository_owner }} node generate-readme.js
 
       - name: Set up Git user
         run: |

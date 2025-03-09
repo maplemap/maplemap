@@ -21,7 +21,7 @@ const getDateWeeksAgo = (weeks) => {
 };
 
 async function fetchRepos() {
-	console.log('Using token:', GITHUB_TOKEN);
+	console.log('Using token:', GITHUB_TOKEN ? '✅ Exists' : '❌ Not Found');
 
 	const response = await fetch(
 		`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`,

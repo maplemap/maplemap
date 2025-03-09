@@ -26,6 +26,8 @@ jobs:
         run: npm install
 
       - name: Executing script
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
         run: GITHUB_USERNAME=${{ github.repository_owner }} node generate-readme.js
 
       - name: Set up Git user

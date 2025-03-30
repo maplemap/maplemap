@@ -1,4 +1,4 @@
-**GitHub language stats**
+**GitHub languages stats**
 
 ```
 JavaScript   ████████░░░░░░░░░░░░  39.62%

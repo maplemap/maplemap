@@ -17,6 +17,7 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.06%
 **Recent updates in last 6 weeks**
 
 ```
-maplemap             Sun Mar 30 2025, LoC: +990 -619
+maplemap             Sun Mar 30 2025, LoC: +991 -619
+maplemap.github.io   Sun Mar 09 2025, LoC: +4 -4
 weather-app-react    Sun Mar 09 2025, LoC: +3734 -185
 ```

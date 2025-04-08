@@ -18,5 +18,4 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 
 ```
 maplemap.github.io   Fri Apr 04 2025, LoC: +25 -9
-video-chat-nextjs-webrtc Fri Apr 04 2025, LoC: +22597 -20565
 ```

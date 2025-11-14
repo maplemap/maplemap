@@ -17,5 +17,6 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 **Recent updates in last 6 weeks**
 
 ```
-maplemap             Fri Nov 14 2025, LoC: +762 -757
+maplemap             Fri Nov 14 2025, LoC: +763 -758
+maplemap.github.io   Sun Oct 19 2025, LoC: +75 -16
 ```

@@ -14,3 +14,9 @@ Makefile     ░░░░░░░░░░░░░░░░░░░░  0.27%
 Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 ```
 
+**Recent updates in last 6 weeks**
+
+```
+maplemap             Tue Nov 18 2025, LoC: +709 -709
+video-chat-nextjs-webrtc Sun Oct 19 2025, LoC: +14 -7
+```

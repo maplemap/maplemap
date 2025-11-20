@@ -18,4 +18,5 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 
 ```
 design-patterns      Wed Nov 19 2025, LoC: +1330 -42
+maplemap.github.io   Sun Oct 19 2025, LoC: +75 -16
 ```

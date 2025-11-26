@@ -14,3 +14,9 @@ Makefile     ░░░░░░░░░░░░░░░░░░░░  0.32%
 Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 ```
 
+**Recent updates in last 6 weeks**
+
+```
+design-patterns      Tue Nov 25 2025, LoC: +1330 -42
+video-chat-nextjs-webrtc Sun Oct 19 2025, LoC: +14 -7
+```

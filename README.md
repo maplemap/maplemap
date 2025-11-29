@@ -17,6 +17,6 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 **Recent updates in last 6 weeks**
 
 ```
-frontend-architecture Tue Nov 25 2025, LoC: +95 -0
+maplemap             Sat Nov 29 2025, LoC: +817 -811
 video-chat-nextjs-webrtc Sun Oct 19 2025, LoC: +14 -7
 ```

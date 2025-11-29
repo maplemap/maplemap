@@ -17,5 +17,6 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 **Recent updates in last 6 weeks**
 
 ```
-video-chat-nextjs-webrtc Sun Oct 19 2025, LoC: +14 -7
+design-patterns      Tue Nov 25 2025, LoC: +1330 -42
+frontend-architecture Tue Nov 25 2025, LoC: +95 -0
 ```

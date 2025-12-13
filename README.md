@@ -17,7 +17,6 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 **Recent updates in last 6 weeks**
 
 ```
-maplemap             Sat Dec 13 2025, LoC: +810 -812
+maplemap             Sat Dec 13 2025, LoC: +812 -812
 design-patterns      Sun Nov 30 2025, LoC: +1330 -42
-frontend-architecture Tue Nov 25 2025, LoC: +95 -0
 ```

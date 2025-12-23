@@ -18,5 +18,5 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 
 ```
 frontend-architecture Tue Dec 23 2025, LoC: +95 -0
-design-patterns      Sun Nov 30 2025, LoC: +1330 -42
+maplemap             Tue Dec 23 2025, LoC: +730 -724
 ```

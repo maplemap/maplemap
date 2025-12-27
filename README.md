@@ -14,3 +14,9 @@ Makefile     ░░░░░░░░░░░░░░░░░░░░  0.32%
 Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 ```
 
+**Recent updates in last 6 weeks**
+
+```
+maplemap             Sat Dec 27 2025, LoC: +768 -768
+design-patterns      Sun Nov 30 2025, LoC: +1330 -42
+```

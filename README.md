@@ -14,9 +14,3 @@ Makefile     ░░░░░░░░░░░░░░░░░░░░  0.32%
 Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.05%
 ```
 
-**Recent updates in last 6 weeks**
-
-```
-maplemap             Sat Jan 03 2026, LoC: +749 -755
-frontend-architecture Tue Dec 23 2025, LoC: +95 -0
-```

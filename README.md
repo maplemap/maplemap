@@ -1,8 +1,8 @@
 **GitHub language stats**
 
 ```
-JavaScript   ███████░░░░░░░░░░░░░  33.80%
-TypeScript   ██████░░░░░░░░░░░░░░  32.04%
+JavaScript   ███████░░░░░░░░░░░░░  33.79%
+TypeScript   ██████░░░░░░░░░░░░░░  32.06%
 Python       ██░░░░░░░░░░░░░░░░░░  9.37%
 Less         ██░░░░░░░░░░░░░░░░░░  7.57%
 CSS          █░░░░░░░░░░░░░░░░░░░  5.61%
@@ -14,3 +14,8 @@ Makefile     ░░░░░░░░░░░░░░░░░░░░  0.39%
 Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.09%
 ```
 
+**Recent updates in last 6 weeks**
+
+```
+maplemap             Mon Apr 13 2026, LoC: +514 -514
+```

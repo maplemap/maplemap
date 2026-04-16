@@ -14,8 +14,3 @@ Makefile     ░░░░░░░░░░░░░░░░░░░░  0.37%
 Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.09%
 ```
 
-**Recent updates in last 6 weeks**
-
-```
-dailypulse           Wed Apr 15 2026, LoC: +9213 -339
-```

@@ -15,3 +15,9 @@ Shell        ░░░░░░░░░░░░░░░░░░░░  0.33%
 Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.14%
 ```
 
+**Recent updates in last 6 weeks**
+
+```
+maplemap             Thu Jun 25 2026, LoC: +136 -135
+tempo                Sat Jun 06 2026, LoC: +24871 -4226
+```

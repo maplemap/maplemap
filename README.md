@@ -1,11 +1,11 @@
 **GitHub language stats**
 
 ```
-TypeScript   █████████░░░░░░░░░░░  43.11%
-JavaScript   ██████░░░░░░░░░░░░░░  27.79%
+TypeScript   █████████░░░░░░░░░░░  43.15%
+JavaScript   ██████░░░░░░░░░░░░░░  27.77%
 Python       █░░░░░░░░░░░░░░░░░░░  7.37%
 CSS          █░░░░░░░░░░░░░░░░░░░  6.08%
-Less         █░░░░░░░░░░░░░░░░░░░  5.96%
+Less         █░░░░░░░░░░░░░░░░░░░  5.95%
 HTML         █░░░░░░░░░░░░░░░░░░░  3.19%
 Twig         █░░░░░░░░░░░░░░░░░░░  2.51%
 SCSS         ░░░░░░░░░░░░░░░░░░░░  2.42%
@@ -18,6 +18,6 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.14%
 **Recent updates in last 6 weeks**
 
 ```
-maplemap             Thu Jul 16 2026, LoC: +191 -185
-tempo                Wed Jul 15 2026, LoC: +1655 -657
+tempo                Thu Jul 16 2026, LoC: +1672 -660
+maplemap             Thu Jul 16 2026, LoC: +192 -186
 ```

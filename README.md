@@ -18,6 +18,5 @@ Dockerfile   ░░░░░░░░░░░░░░░░░░░░  0.14%
 **Recent updates in last 6 weeks**
 
 ```
-maplemap             Tue Jul 28 2026, LoC: +346 -340
 tempo                Thu Jul 23 2026, LoC: +2125 -722
 ```
